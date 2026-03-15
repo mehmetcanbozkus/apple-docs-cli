@@ -1,5 +1,5 @@
 {
-	"name": "apple-docs-cli",
+	"name": "apple-docs",
 	"version": "1.0.0",
 	"description": "CLI for querying Apple Developer Documentation — search docs, browse frameworks, WWDC videos, sample code, and API analysis",
 	"license": "MIT",
