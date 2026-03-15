@@ -1,12 +1,5 @@
-// Prevent the MCP server from auto-starting when we import the package
-process.env['NODE_ENV'] = 'test';
-
-const {default: AppleDeveloperDocsMCPServer} = await import(
-	'@kimsungwhee/apple-docs-mcp'
-);
-const {handleToolCall} = await import(
-	'@kimsungwhee/apple-docs-mcp/dist/tools/handlers.js'
-);
+import AppleDeveloperDocsMCPServer from '@kimsungwhee/apple-docs-mcp';
+import {handleToolCall} from '@kimsungwhee/apple-docs-mcp/dist/tools/handlers.js';
 
 const server = new AppleDeveloperDocsMCPServer();
 
