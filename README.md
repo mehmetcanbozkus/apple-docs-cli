@@ -108,10 +108,19 @@ apple-docs updates --technology SwiftUI --year 2025
 apple-docs overviews --platform ios
 ```
 
+### Version
+
+```bash
+apple-docs version
+apple-docs --version
+apple-docs -v
+```
+
 ## Flags
 
 | Flag | Description |
 |------|-------------|
+| `--version`, `-v` | Show current version |
 | `--type <type>` | Symbol/search type filter (class, struct, enum, protocol) |
 | `--limit <n>` | Max results |
 | `--year <year>` | Year filter |

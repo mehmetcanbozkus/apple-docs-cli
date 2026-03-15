@@ -39,6 +39,7 @@ Based on the user's question: $ARGUMENTS
 ## Commands
 
 ```
+apple-docs version                     # Show current version
 apple-docs search <query>              # Search Apple documentation
 apple-docs doc <url>                   # Get full doc page content
 apple-docs tech [category]             # List Apple technologies/frameworks

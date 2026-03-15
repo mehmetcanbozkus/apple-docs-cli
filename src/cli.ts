@@ -1,8 +1,17 @@
 #!/usr/bin/env node
 
+import {createRequire} from 'node:module';
 import {callTool} from './mcp.js';
 
+const require = createRequire(import.meta.url);
+const {version} = require('../package.json') as {version: string};
+
 const [, , command, ...rest] = process.argv;
+
+if (command === '--version' || command === '-v' || command === 'version') {
+	console.log(version);
+	process.exit(0);
+}
 
 function parseArgs(argv: string[]): {
 	positional: string[];
@@ -34,6 +43,7 @@ const num = (key: string) =>
 const HELP = `Usage: apple-docs <command> [args] [--flags]
 
 Commands:
+  version                     Show current version
   search <query>              Search Apple documentation
   doc <url>                   Get documentation content
   tech [category]             List Apple technologies
@@ -62,7 +72,8 @@ Flags:
   --query <q>           Search query filter
   --technology <t>      Technology filter
   --language <lang>     Language filter (swift, occ)
-  --depth <d>           Search depth (shallow, medium, deep)`;
+  --depth <d>           Search depth (shallow, medium, deep)
+  --version, -v         Show version`;
 
 function need(val: string | undefined, usage: string): string {
 	if (!val) {
