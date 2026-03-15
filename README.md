@@ -1,4 +1,4 @@
-# apple-docs-cli
+# apple-docs
 
 CLI for querying Apple Developer Documentation. Searches docs, browses frameworks, WWDC videos, sample code, and more.
 
@@ -7,12 +7,22 @@ Built on top of [apple-docs-mcp](https://github.com/kimsungwhee/apple-docs-mcp) 
 ## Install
 
 ```bash
-git clone https://github.com/mtcnbzks/apple-docs-cli.git
-cd apple-docs-cli
-npm install
-npm run build
-npm link
+npm i -g apple-docs
 ```
+
+Or run directly:
+
+```bash
+npx apple-docs search "SwiftUI List"
+```
+
+### Claude Code Skill
+
+```bash
+npx skills add mtcnbzks/apple-docs-cli
+```
+
+Then use `/apple-docs` in Claude Code to query Apple documentation.
 
 ## Usage
 
