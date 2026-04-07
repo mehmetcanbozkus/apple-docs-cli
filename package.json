@@ -3,12 +3,12 @@
 	"version": "1.0.6",
 	"description": "CLI for querying Apple Developer Documentation — search docs, browse frameworks, WWDC videos, sample code, and API analysis",
 	"license": "MIT",
-	"author": "mtcnbzks",
+	"author": "mehmetcanbozkus",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mtcnbzks/apple-docs-cli.git"
+		"url": "https://github.com/mehmetcanbozkus/apple-docs-cli.git"
 	},
-	"homepage": "https://github.com/mtcnbzks/apple-docs-cli",
+	"homepage": "https://github.com/mehmetcanbozkus/apple-docs-cli",
 	"keywords": [
 		"apple",
 		"apple-developer",

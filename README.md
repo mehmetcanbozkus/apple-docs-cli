@@ -21,7 +21,7 @@ npx apple-docs search "SwiftUI List"
 Install as a skill for Claude Code, Cursor, Windsurf, and 40+ other AI agents:
 
 ```bash
-npx skills add mtcnbzks/apple-docs-cli
+npx skills add mehmetcanbozkus/apple-docs-cli
 ```
 
 Then use `/apple-docs` in Claude Code to query Apple documentation.
