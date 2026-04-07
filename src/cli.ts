@@ -80,7 +80,7 @@ function need(val: string | undefined, usage: string): string {
 		console.error(usage);
 		process.exit(1);
 	}
-	return val;
+	return val!;
 }
 
 async function main() {

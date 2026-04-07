@@ -40,6 +40,7 @@ apple-docs <command> [args] [--flags]
 # Search Apple docs
 apple-docs search "SwiftUI List"
 apple-docs search "CoreML" --type documentation
+apple-docs search "async await" --type video
 
 # Get full doc page content
 apple-docs doc "https://developer.apple.com/documentation/swiftui/list"
@@ -121,7 +122,7 @@ apple-docs -v
 | Flag | Description |
 |------|-------------|
 | `--version`, `-v` | Show current version |
-| `--type <type>` | Symbol/search type filter (class, struct, enum, protocol) |
+| `--type <type>` | Symbol/search type filter (documentation, video, sample-code, class, struct, enum, protocol) |
 | `--limit <n>` | Max results |
 | `--year <year>` | Year filter |
 | `--framework <fw>` | Framework filter |
